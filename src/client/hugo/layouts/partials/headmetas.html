@@ -1,0 +1,19 @@
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="application-name" content="Hugo workflow">
+    <meta name="theme-color" content="#4285f4">
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="subject" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.SiteDescription }}{{ end }}">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="rating" content="General">
+    <meta name="keywords" content="{{ with .Keywords }}{{ range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}{{ end }}">
+    <meta name="author" content="Hugo workflow">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
+    <meta property="og:image" content="{{ if .Params.image }}{{.Site.BaseURL}}/assets/images/{{.Params.image}}{{ else }}{{.Site.BaseURL}}/assets/images/logo.png{{ end }}">
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.SiteDescription }}{{ end }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+    <html lang='en'>

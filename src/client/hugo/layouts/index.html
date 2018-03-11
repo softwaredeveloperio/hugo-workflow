@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{ partial "headmetas.html" . }}
+    {{"<!-- build:css /assets/styles/lib.min.css -->" | safeHTML }}
+    {{"<!-- bower:css -->" | safeHTML }}
+    {{"<!-- endbower -->" | safeHTML }}
+    {{"<!-- endbuild -->" | safeHTML }}
+    {{"<!-- build:css(.) /assets/styles/app.min.css -->" | safeHTML }}
+    {{"<!-- inject:css -->" | safeHTML }}
+    {{"<!-- endinject -->" | safeHTML }}
+    {{"<!-- endbuild -->" | safeHTML }}
+</head>
+
+<body>
+
+    <h1>Welcome to Hugo workflow</h1>
+
+    {{"<!-- build:js /assets/scripts/lib.min.js -->" | safeHTML }}
+    {{"<!-- bower:js -->" | safeHTML }}
+    {{"<!-- endbower -->" | safeHTML }}
+    {{"<!-- endbuild -->" | safeHTML }}
+
+    {{"<!-- build:js(.) /assets/scripts/app.min.js -->" | safeHTML }}
+    {{"<!-- inject:js -->" | safeHTML }}
+    {{"<!-- endinject -->" | safeHTML }}
+    {{"<!-- endbuild -->" | safeHTML }}
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+---
+baseURL: "http://thisistheurlofyourownwebsite.com"
+languageCode: "en"
+
+title: "Hugo workflow"
+tags: "hugo,blog"
+
+metaDataFormat: "yaml"
+enableRobotsTXT: true
+
+permalinks:
+  post: /:title/
+
+params:
+  Description: "Hugo workflow"
+---

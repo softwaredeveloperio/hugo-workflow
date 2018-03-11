@@ -1,0 +1,21 @@
+{
+  "name": "Hugo workflow",
+  "authors": [
+    "softwaredeveloper-io"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "highlightjs": "^9.10.0"
+  }
+}

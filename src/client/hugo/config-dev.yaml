@@ -1,0 +1,14 @@
+---
+baseURL: "/"
+languageCode: "en"
+title: "Hugo workflow"
+keywords: ["hugo", "blog"]
+metaDataFormat: "yaml"
+disableRSS: true
+disableSitemap: true
+permalinks:
+  post: /:title/
+
+params:
+  Description: "Hugo workflow"
+---
